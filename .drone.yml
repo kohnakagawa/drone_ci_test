@@ -9,6 +9,7 @@ steps:
 - name: build
   image: compulim/msbuild
   commands:
+  - dir "C:\Program Files (x86)\Windows Kits\10\bin"
   - msbuild drone_ci_test.sln /p:Configuration=Debug
   volumes:
   - name: docker
