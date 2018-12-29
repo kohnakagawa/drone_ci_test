@@ -7,7 +7,7 @@ platform:
 
 steps:
 - name: build
-  image: tsunetsune/docker-msbuild
+  image: tsunetsune/docker-msbuild:1.0
   commands:
   - msbuild drone_ci_test.sln /p:Configuration=Debug
   volumes:
