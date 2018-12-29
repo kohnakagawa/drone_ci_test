@@ -9,7 +9,7 @@ steps:
 - name: build
   image: tsunetsune/docker-msbuild:1.0
   commands:
-  - msbuild drone_ci_test.sln /p:Configuration=Debug
+  - msbuild drone_ci_test.sln /p:Configuration=Release
   volumes:
   - name: docker
     path: C:\code
